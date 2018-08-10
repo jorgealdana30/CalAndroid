@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="ingresa_primer_numero">Enter First Number</string>
+    <string name="primer_numero">First Number</string>
+    <string name="limpiar">Clean</string>
+    <string name="segundo_numero">Second Number</string>
+    <string name="ingresa_segundo_numero">Enter Second Number</string>
+    <string name="calcular">Calculate</string>
+</resources>

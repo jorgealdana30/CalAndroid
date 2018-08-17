@@ -14,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.lang.reflect.Array;
+import java.util.Locale;
 
 public class Principal extends AppCompatActivity {
 
@@ -44,24 +45,26 @@ public class Principal extends AppCompatActivity {
         if (et1.getText().length() != 0 && et2.getText().length() != 0) {
             double num1 = Double.parseDouble(et1.getText().toString());
             double num2 = Double.parseDouble(et2.getText().toString());
+            double res = 0;
             switch (spop.getSelectedItemPosition()) {
                 case 0: {
-                    tv1.setText(Double.toString(Metodos.sumar(num1,num2)));
+                    res = Metodos.sumar(num1,num2);
                     break;
                 }
                 case 1: {
-                    tv1.setText(Double.toString(Metodos.restar(num1,num2)));
+                    res = Metodos.restar(num1,num2);
                     break;
                 }
                 case 2: {
-                    tv1.setText(Double.toString(Metodos.multiplicar(num1,num2)));
+                    res = Metodos.multiplicar(num1,num2);
                     break;
                 }
                 case 3: {
-                    tv1.setText(Double.toString(Metodos.dividir(num1,num2)));
+                    res = Metodos.dividir(num1,num2);
                     break;
                 }
             }
+            tv1.setText(""+String.format(Locale.ENGLISH,"%.2f",res));
         }else{
             Toast.makeText(this,resources.getText(R.string.errorfaltanum), Toast.LENGTH_SHORT).show();
         }

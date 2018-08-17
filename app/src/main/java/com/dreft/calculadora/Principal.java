@@ -47,19 +47,19 @@ public class Principal extends AppCompatActivity {
             double num2 = Double.parseDouble(et2.getText().toString());
             double res = 0;
             switch (spop.getSelectedItemPosition()) {
-                case 0: {
+                case 1: {
                     res = Metodos.sumar(num1,num2);
                     break;
                 }
-                case 1: {
+                case 2: {
                     res = Metodos.restar(num1,num2);
                     break;
                 }
-                case 2: {
+                case 3: {
                     res = Metodos.multiplicar(num1,num2);
                     break;
                 }
-                case 3: {
+                case 4: {
                     res = Metodos.dividir(num1,num2);
                     break;
                 }
@@ -73,6 +73,7 @@ public class Principal extends AppCompatActivity {
     public void limpiar(View view){
         et1.setText("");
         et2.setText("");
-       tv1.setText(resources.getText(R.string.resultado));
+        spop.setSelection(0);
+        tv1.setText(resources.getText(R.string.resultado));
     }
 }

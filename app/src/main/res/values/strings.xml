@@ -12,10 +12,12 @@
     <string name="division">Division</string>
     <string name="resultado">Resultado</string>
     <string-array name="opciones">
+        <item>@string/seleccione</item>
         <item>@string/suma</item>
         <item>@string/resta</item>
         <item>@string/multiplicacion</item>
         <item>@string/division</item>
     </string-array>
     <string name="errorfaltanum">Por favor ingrese un numero</string>
+    <string name="seleccione">Seleccione operacion...</string>
 </resources>

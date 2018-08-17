@@ -13,4 +13,5 @@
     <string name="division">Division</string>
     <string name="resultado">Result</string>
     <string name="errorfaltanum">Please, input a number</string>
+    <string name="seleccione">Select operation</string>
 </resources>

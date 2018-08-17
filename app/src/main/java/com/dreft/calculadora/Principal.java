@@ -21,7 +21,6 @@ public class Principal extends AppCompatActivity {
     private EditText et1, et2;
     private TextView tv1;
     private Spinner spop;
-    private String op[];
     private Resources resources;
 
     public Principal() {
@@ -36,8 +35,6 @@ public class Principal extends AppCompatActivity {
         tv1 = (TextView) findViewById(R.id.lblRes);
         spop = (Spinner) findViewById(R.id.cmbOpcion);
         resources = this.getResources();
-        op = resources.getStringArray(R.array.opciones);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, op);
     }
 
     @SuppressLint("SetTextI18n")

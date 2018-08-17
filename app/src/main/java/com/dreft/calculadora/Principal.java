@@ -58,7 +58,11 @@ public class Principal extends AppCompatActivity {
                         break;
                     }
                     case 4: {
-                        res = Metodos.dividir(num1, num2);
+                        if(num2 != 0){
+                            res = Metodos.dividir(num1, num2);
+                        }else{
+                            Toast.makeText(this,resources.getText(R.string.errornumcero), Toast.LENGTH_SHORT).show();
+                        }
                         break;
                     }
                 }

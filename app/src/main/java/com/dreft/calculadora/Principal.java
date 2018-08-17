@@ -46,25 +46,29 @@ public class Principal extends AppCompatActivity {
             double num1 = Double.parseDouble(et1.getText().toString());
             double num2 = Double.parseDouble(et2.getText().toString());
             double res = 0;
-            switch (spop.getSelectedItemPosition()) {
-                case 1: {
-                    res = Metodos.sumar(num1,num2);
-                    break;
+            if(spop.getSelectedItemPosition() != 0) {
+                switch (spop.getSelectedItemPosition()) {
+                    case 1: {
+                        res = Metodos.sumar(num1, num2);
+                        break;
+                    }
+                    case 2: {
+                        res = Metodos.restar(num1, num2);
+                        break;
+                    }
+                    case 3: {
+                        res = Metodos.multiplicar(num1, num2);
+                        break;
+                    }
+                    case 4: {
+                        res = Metodos.dividir(num1, num2);
+                        break;
+                    }
                 }
-                case 2: {
-                    res = Metodos.restar(num1,num2);
-                    break;
-                }
-                case 3: {
-                    res = Metodos.multiplicar(num1,num2);
-                    break;
-                }
-                case 4: {
-                    res = Metodos.dividir(num1,num2);
-                    break;
-                }
+                tv1.setText("" + String.format(Locale.ENGLISH, "%.2f", res));
+            }else{
+                Toast.makeText(this,resources.getText(R.string.errorfaltaop), Toast.LENGTH_SHORT).show();
             }
-            tv1.setText(""+String.format(Locale.ENGLISH,"%.2f",res));
         }else{
             Toast.makeText(this,resources.getText(R.string.errorfaltanum), Toast.LENGTH_SHORT).show();
         }
@@ -75,5 +79,6 @@ public class Principal extends AppCompatActivity {
         et2.setText("");
         spop.setSelection(0);
         tv1.setText(resources.getText(R.string.resultado));
+        et1.requestFocus();
     }
 }

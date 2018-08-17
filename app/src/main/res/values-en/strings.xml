@@ -14,4 +14,5 @@
     <string name="resultado">Result</string>
     <string name="errorfaltanum">Please, input a number</string>
     <string name="seleccione">Select operation</string>
+    <string name="errorfaltaop">Please, select a operation</string>
 </resources>

@@ -20,4 +20,5 @@
     </string-array>
     <string name="errorfaltanum">Por favor ingrese un numero</string>
     <string name="seleccione">Seleccione operacion...</string>
+    <string name="errorfaltaop">Por favor, seleccione una operacion</string>
 </resources>

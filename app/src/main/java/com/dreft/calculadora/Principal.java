@@ -39,7 +39,7 @@ public class Principal extends AppCompatActivity {
 
     @SuppressLint("SetTextI18n")
     public void calcular(View view) {
-        if (et1.getText().length() != 0 && et2.getText().length() != 0) {
+        if (et1.getText().toString().isEmpty() && et2.getText().toString().isEmpty()) {
             double num1 = Double.parseDouble(et1.getText().toString());
             double num2 = Double.parseDouble(et2.getText().toString());
             double res = 0;

@@ -26,20 +26,4 @@ public class Principal extends AppCompatActivity {
         tv1 = (TextView) findViewById(R.id.tvres);
     }
 
-    @SuppressLint("SetTextI18n")
-    public void calcular(View view){
-        switch (spop.getSelectedItem().toString()){
-            case "Sumar":{
-                int res = 0;
-                res = Integer.parseInt(et1.getText().toString())+Integer.parseInt(et2.getText().toString());
-                tv1.setText("El resultado es: " +Integer.toString(res));
-                et1.setText("");
-                et2.setText("");
-            }
-            default:{
-                Toast.makeText(this,"Seleccione una opcion",Toast.LENGTH_LONG ).show();
-
-            }
-        }
-    }
 }

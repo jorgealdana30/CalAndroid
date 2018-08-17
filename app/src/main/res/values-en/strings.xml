@@ -7,4 +7,9 @@
     <string name="segundo_numero">Second Number</string>
     <string name="ingresa_segundo_numero">Enter Second Number</string>
     <string name="calcular">Calculate</string>
+    <string name="suma">Addition</string>
+    <string name="resta">Subtraction</string>
+    <string name="multiplicacion">Multiplication</string>
+    <string name="division">Division</string>
+    <string name="resultado">Result</string>
 </resources>

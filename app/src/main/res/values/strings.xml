@@ -6,4 +6,15 @@
     <string name="ingresa_segundo_numero">Ingresa segundo numero:</string>
     <string name="calcular">Calcular</string>
     <string name="limpiar">Limpiar</string>
+    <string name="suma">Suma</string>
+    <string name="resta">Resta</string>
+    <string name="multiplicacion">Multiplicacion</string>
+    <string name="division">Division</string>
+    <string name="resultado">Resultado</string>
+    <string-array name="opciones">
+        <item>@string/suma</item>
+        <item>@string/resta</item>
+        <item>@string/multiplicacion</item>
+        <item>@string/division</item>
+    </string-array>
 </resources>

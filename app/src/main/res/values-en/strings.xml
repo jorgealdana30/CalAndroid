@@ -12,4 +12,5 @@
     <string name="multiplicacion">Multiplication</string>
     <string name="division">Division</string>
     <string name="resultado">Result</string>
+    <string name="errorfaltanum">Please, input a number</string>
 </resources>

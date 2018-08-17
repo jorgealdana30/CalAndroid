@@ -9,30 +9,16 @@
     tools:layout_editor_absoluteX="8dp"
     tools:layout_editor_absoluteY="8dp">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:text="@string/ingresa_primer_numero"
-        android:textSize="24sp" />
-
     <EditText
-        android:id="@+id/et1"
+        android:id="@+id/txtNum1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/primer_numero"
         android:inputType="number" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="match_parent"
-        android:layout_height="57dp"
-        android:text="@string/ingresa_segundo_numero"
-        android:textSize="24sp" />
-
     <EditText
-        android:id="@+id/et2"
+        android:id="@+id/txtNum2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -40,7 +26,7 @@
         android:inputType="number" />
 
     <Spinner
-        android:id="@+id/spop"
+        android:id="@+id/cmbOpcion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:entries="@array/opciones" />
@@ -51,26 +37,31 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btnc"
+            android:id="@+id/btnCal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="calcular"
             android:text="@string/calcular"
             tools:ignore="OnClick" />
 
         <Button
+            android:id="@+id/btnLim"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="limpiar"
             android:text="@string/limpiar" />
 
     </LinearLayout>
 
     <TextView
-        android:id="@+id/tvres"
+        android:id="@+id/lblRes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Resultado" />
+        android:lineSpacingExtra="8sp"
+        android:text="@string/resultado"
+        android:textAlignment="textStart"
+        android:textSize="18sp" />
 
 </LinearLayout>

@@ -13,25 +13,25 @@ public class ExampleUnitTest {
     @Test
     public void sumar_dos_numeros(){
         double a = 4,b = 6,c;
-        c=10;
+        c=a+b;
         assertEquals(c,Metodos.sumar(a,b),0);
     }
     @Test
     public void restar_dos_numeros(){
         double a = 4,b = 6,c;
-        c=-2;
+        c=a-b;
         assertEquals(c,Metodos.restar(a,b),0);
     }
     @Test
     public void multi_dos_numeros(){
         double a = 4,b = 6,c;
-        c=24;
+        c=a*b;
         assertEquals(c,Metodos.multiplicar(a,b),0);
     }
     @Test
     public void dividir_dos_numeros(){
         double a = 4,b = 6,c;
-        c=0.6;
-        assertEquals(c,Metodos.dividir(a,b),1);
+        c=a/b;
+        assertEquals(c,Metodos.dividir(a,b),0);
     }
 }
